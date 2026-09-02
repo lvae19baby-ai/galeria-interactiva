@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Galería Interactiva</title>
+    <style>
+        #image {
+            width: 550px;
+            height: 300px;
+            border: 5px solid #000;
+            margin: 20px auto;
+            background-color: #8e68ff;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            font-size: 150%;
+            text-align: center;
+            line-height: 300px;
+        }
+        .preview {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border: 2px solid #000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="image">
+        Pase el ratón por encima de una imagen para mostrarla aquí
+    </div>
+
+    <img class="preview" 
+         src="https://picsum.photos/id/1015/300/200" 
+         alt="Flor bonita" 
+         onmouseover="upDate(this)" 
+         onmouseleave="unDo()">
+
+    <img class="preview" 
+         src="https://picsum.photos/id/1018/300/200" 
+         alt="Montaña con nieve" 
+         onmouseover="upDate(this)" 
+         onmouseleave="unDo()">
+
+    <img class="preview" 
+         src="https://picsum.photos/id/1019/300/200" 
+         alt="Lago tranquilo" 
+         onmouseover="upDate(this)" 
+         onmouseleave="unDo()">
+
+    <script src="script.js"></script>
+</body>
+</html>
